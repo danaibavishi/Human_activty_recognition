@@ -22,7 +22,7 @@ def main():
 	#Open your Phidgets and wait for attachment
 	encoder0.openWaitForAttachment(5000)
 
-	#Do stuff with your Phidgets here or in your event handlers.
+	#Do stuff with your Phidgets here or in your event handlers
 
 	try:
 		input("Press Enter to Stop\n")
@@ -31,5 +31,6 @@ def main():
 
 	#Close your Phidgets once the program is done.
 	encoder0.close()
+
 
 main()
