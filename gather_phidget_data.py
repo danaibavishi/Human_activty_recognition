@@ -1,10 +1,13 @@
 from Phidget22.Phidget import *
 from Phidget22.Devices.Encoder import *
 import time
+import osc_pipe as op
 
 #Declare any event handlers here. These will be called every time the associated event occurs.
 
 def onPositionChange(self, positionChange, timeChange, indexTriggered):
+	#Insert the osc communication stuff here
+
 	print("PositionChange: " + str(positionChange))
 	print("TimeChange: " + str(timeChange))
 	print("IndexTriggered: " + str(indexTriggered))
