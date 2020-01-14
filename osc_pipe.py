@@ -9,6 +9,10 @@ import time
 
 from pythonosc import udp_client
 
+def send(ip,port):
+    #client = udp_client.SimpleUDPClient(ip, port)
+    client.send_message("/filter", random.random())
+
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()
@@ -21,5 +25,5 @@ if __name__ == "__main__":
   client = udp_client.SimpleUDPClient(args.ip, args.port)
 
   for x in range(10):
-    client.send_message("/filter", random.random())
+    send("127.0.0.1",5005)
     time.sleep(1)
