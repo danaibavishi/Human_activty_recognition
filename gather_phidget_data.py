@@ -7,7 +7,7 @@ import osc_pipe as op
 
 def onPositionChange(self, positionChange, timeChange, indexTriggered):
 	#Insert the osc communication stuff here
-
+	op.send("127.0.0.1",5005, str(positionChange))
 	print("PositionChange: " + str(positionChange))
 	print("TimeChange: " + str(timeChange))
 	print("IndexTriggered: " + str(indexTriggered))
