@@ -187,7 +187,7 @@
   <maxSliderValue>928691</maxSliderValue>
   <matchThreshold>546.29</matchThreshold>
   <recordingState>NOT_RECORDING</recordingState>
-  <runningState>RUNNING</runningState>
+  <runningState>NOT_RUNNING</runningState>
   <versionNumbers>
     <int>24</int>
   </versionNumbers>
